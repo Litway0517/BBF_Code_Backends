@@ -39,7 +39,7 @@ public class HelloWorld {
         GraphQL build = GraphQL.newGraphQL(graphQLSchema).build();
 
         // 执行hello查询
-        ExecutionResult hello = build.execute("hello");
+        ExecutionResult hello = build.execute("{hello}");
 
         // 输出
         System.out.println(hello.getData().toString());
