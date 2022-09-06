@@ -1,0 +1,15 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: SpringBoot_GraphQL
+
+dgs:
+  graphql:
+    servlet:
+      mapping: /graphql
+      enabled: true
+    # 扫描 resource 下 .graphql 后缀的文件
+    schema-locations: "/schema/*.graphqls"
+
